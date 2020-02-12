@@ -53,9 +53,9 @@ print(f3(8))     # Should print 9
 # Note: Google "python keyword arguments".
 
 # YOUR CODE HERE
-def f4(**args):
-    for key, value in args.items():
-        print(f"key: {key}, value: {value}")
+def f4(**kwargs):
+    for key in kwargs:
+        print(f"key: {key}, value: {kwargs[key]}")
 
 # Should print
 # key: a, value: 12
